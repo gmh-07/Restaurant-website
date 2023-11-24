@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant's Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+    
+        :root{
+          --navbar-height:59px;
+        }
+        #navbar{
+          display: flex;
+          align-items: center;
+          position:relative;
+        }
+        #logo{
+          margin: 10px 34px;
+        }
+        #logo img{
+          height: 59px;
+          margin:3px 6px;
+        }
+        #navbar ul{
+          display: flex;
+        
+        }
+        #navbar::before{
+        content: "";
+        background-color: rgb(110, 221, 147);
+        position: absolute;   
+        height: 100%;
+        width:100%;
+        z-index: -1;
+        opacity: 0.7;
+        }
+    
+        #navbar ul li{
+        list-style: none;
+        font-size:1.3rem;
+        margin: 20px;
+        }
+    
+        #navbar ul li a{
+          color:rgb(245, 25, 13);
+          display:block;
+          padding:3px 22px;
+          border-radius: 20px;
+          text-decoration: none;
+        }
+    
+        #navbar ul li a:hover{
+          color:black ;
+          background-color: rgb(18, 172, 100);
+        }
+        #navbar ul li a:active{
+          color:rgb(21, 6, 131) ;
+          background-color: rgb(56, 240, 154);
+        }
+    
+        .search{
+          float:right;
+          color:rgb(24, 228, 126);
+          padding:12px 75px;
+        }
+    
+        #navbar input{
+          border:3px solid rgb(56, 210, 237);
+          border-radius: 10px;
+          padding: 6px 17px;
+          width: 390px;
+        }
+    
+        body{
+          background-color: black;
+        }
+
+        .container1{
+      background-color: black;
+      color: antiquewhite;
+    }
+
+    #yt{
+      font-size: 50px;
+      color: red;
+      margin: 30px;
+      padding: 30px;
+    }
+
+    #insta{
+      font-size: 50px;
+      color: rgb(205, 16, 219);
+      margin: 30px;
+      padding: 30px;
+    }
+
+    #fb{
+      font-size: 50px;
+      color: rgb(20, 50, 216);
+      margin: 30px;
+      padding: 30px;
+    }
+
+    #twit{
+      font-size: 50px;
+      color: rgb(16, 205, 212);
+      margin: 30px;
+      padding: 30px;
+    }
+
+    #discord{
+      font-size: 50px;
+      color: rgb(106, 102, 102);
+      margin: 30px;
+      padding: 30px;
+    }
+    .tmain{
+      margin: 50px auto;
+      display: table;
+      width: 80%;
+      font-family: sans-serif;
+      background: transparent url;
+      padding: 12px 0;
+      color: rgb(201, 13, 13);
+      border: 3px solid blue;
+
+    }
+
+    tbody{
+      border: 2px solid purple;
+    }
+    
+      </style>
+
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div id="logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVLz7UGBMMRoxTQfRa2ALIzm6UzlHqUXJuw&usqp=CAU" alt="">
+        </div>
+        <ul>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="menu.html">Our Menu</a></li>
+          <li class="item"><a href="order.html">Order Now</a></li>
+          <li class="item"><a href="contact.html">Contact us</a></li>
+          <div class="search">
+            <input type="text" name="search" id="search1" placeholder="What do you want to eat?">
+          </div>
+          <button type="button" class="btn btn-warning" style="margin: 10px; padding: 10px;">Search</button>
+        </ul>
+      </nav>
+
+      <div class="alert alert-success" role="alert">
+       <h2> Checkout our Restaurant's Menu Here,</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.foodandwine.com/thmb/QqinPDSGc2krV8XDgZWwoxVgi5s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/palak-paneer-with-pressed-ricotta-FT-RECIPE0322-4c6f0e411c6444bd81152cb2d078f2bd.jpg" alt="">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Palak Paneer</text></svg>
+              <div class="card-body">
+                <p class="card-text">Palak Paneer, a popular Indian dish, combines fresh spinach (palak) with soft cottage cheese (paneer) in a flavorful blend. 😋🍽️ It's creamy, nutritious, and loved by many.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Order now</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Orderlist</button>
+                  </div>
+                  <small class="text-muted">17 mins to cook</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://aradbranding.com/en/uploads/topics/16752551429653.jpg" alt="">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Maggi Noodles</text></svg>
+              <div class="card-body">
+                <p class="card-text">"Delicious Maggi, a comforting meal! 😋🍝 Easy to cook, versatile, and loved by all. Quick fix for hunger, flavorsome, and affordable. A true classic. 🥘"</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Order now</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Orderlist</button>
+                  </div>
+                  <small class="text-muted">5 mins to cook</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/05/chicken-pulao-recipe.jpg" alt="">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Pulao</text></svg>
+              <div class="card-body">
+                <p class="card-text">Delicious Pulao 🍚: Fragrant basmati rice, sautéed veggies 🥦, aromatic spices 🌶️, and tender meat 🍖 or tofu 🥡. A symphony of flavors in a single pot! 🍽️</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Order now</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Orderlist</button>
+                  </div>
+                  <small class="text-muted">20 mins to cook</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Pastry_assortment.jpg/450px-Pastry_assortment.jpg" alt="">
+              
+              <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Pasteries</text></svg>
+              <div class="card-body">
+                <p class="card-text">Delight in delectable pastries! 🥐 Savor flaky croissants, sweet fruit tarts 🍓, and creamy eclairs. Indulge in the world of pastries! 🍰 #PastryLove</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Order now</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Orderlist</button>
+                  </div>
+                  <small class="text-muted">9 mins to cook</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://economictimes.indiatimes.com/thumb/height-450,width-600,imgsize-172752,msid-100814678/lead-pic.jpg?from=mdr" alt="">
+              
+              <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Marathi Poha</text></svg>
+              <div class="card-body">
+                <p class="card-text">Poha is a fluffy Indian breakfast dish made from flattened rice, often seasoned with spices, peanuts, and lime juice. 😋🍚 Perfect for a delicious morning start!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Order now</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Orderlist</button>
+                  </div>
+                  <small class="text-muted">11 mins to cook</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg" alt="">
+              
+              <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Dosa</text></svg>
+              <div class="card-body">
+                <p class="card-text">Dosa: South Indian delight 🍽️
+                  Thin, crispy crepe made from fermented rice & lentil batter. Served with chutney and sambar. Perfect breakfast or snack! 😋🥘</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Order now</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Orderlist</button>
+                  </div>
+                  <small class="text-muted">15 mins to cook</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="tmain" style="color: white;">
+        <caption>Non-Vegeterian Menu</caption>
+        <thead>
+          <tr>
+            <th>serial no.</th>
+            <th>Dishes</th>
+            <th>Prices</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td>1.</td>
+            <td>Chicken Kari</td>
+            <td>100 per plate</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Chicken kofta</td>
+            <td>150 per plate</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Chicken Biryani</td>
+            <td>140 per plate</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Mutton Biryani</td>
+            <td>200 per plate</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Fish Fry</td>
+            <td>100 per plate</td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Fish Kari</td>
+            <td>80 per plate</td>
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td>Anda Kari</td>
+            <td>50 per plate</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="alert alert-warning" role="alert">
+        <h2>Don't Wait Order Something to feel the real taste</h2>
+      </div>
+
+      <div class="container1">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+          </div>
+      
+          <div>
+            <i id="yt" class="fa-brands fa-youtube"></i>
+            <i id="insta" class="fa-brands fa-instagram"></i>
+            <i id="fb" class="fa-brands fa-facebook"></i>
+            <i id="twit" class="fa-brands fa-twitter"></i>
+            <i id="discord" class="fa-brands fa-discord"></i>
+          </div>
+        </footer>
+      </div>
+
+
+</body>
+</html>
